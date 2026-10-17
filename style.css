@@ -1,0 +1,41 @@
+body{
+    background-color: black;
+    color: salmon;
+}
+footer{
+    color: aquamarine;
+}
+section{
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    align-items:stretch
+}
+div{
+    height: 60px;
+    width: 60px;
+    border: solid 2px gray;
+}
+
+@media screen and (max-width:768px){
+    h1{
+        text-align: center;
+    }
+    footer{
+        text-align: center;
+    }
+    body{
+        background-color: darkslategrey;
+    }
+}
+@media screen and (max-width:425px){
+    section{
+        flex-wrap: wrap;
+    }
+    h1{
+        font-size: 20px;
+    }
+    body{
+        background-color: rgb(60, 4, 60);
+    }
+}

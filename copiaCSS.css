@@ -1,0 +1,250 @@
+/* ---------- Geral ---------- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    background-color: #fafafa;
+    margin: 0;
+    padding: 20px;
+}
+
+.pagina {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #14282b;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid #14282b;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0;
+    padding: 12px;
+    background-color: #411f5e;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 30px;
+    border: 2px solid #14282b;
+}
+img{
+    width: 300px;
+    height: 300px;
+}
+.imagem {
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+}
+
+.texto {
+    flex: 1;
+}
+
+.botao {
+    display: inline-block;
+    padding: 10px 24px;
+    color: #14282b;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #f47d0d;
+    border: 2px solid #14282b;
+}
+
+.servicos {
+    margin-top: 20px;
+    padding: 30px;
+    border: 2px solid #14282b;
+}
+
+.servicos h2 {
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+
+.lista-servicos {
+    display: flex;
+    gap: 20px;
+}
+
+.servico {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    background-color: #e5eeee;
+    border: 2px solid #14282b;
+}
+
+.icone-servico {
+    font-size: 50px;
+}
+
+.servico h3 {
+    margin: 10px 0;
+}
+
+.servico p {
+    margin: 0;
+}
+
+
+.chamada {
+    margin-top: 20px;
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+    background-color: #411f5e;
+}
+
+.chamada h2 {
+    margin: 0 0 10px;
+    font-size: 30px;
+}
+
+.chamada p {
+    max-width: 600px;
+    margin: 0 auto 25px;
+}
+
+.botao-chamada {
+    display: inline-block;
+    padding: 14px 32px;
+    color: #14282b;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #f47d0d;
+    border: 2px solid #f47d0d;
+}
+
+.botao-chamada:hover {
+    background-color: white;
+    border-color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 25px;
+    color: white;
+    background-color: #14282b;
+}
+
+footer h2 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #f4c20d;
+}
+
+footer p {
+    margin: 8px 0;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px 30px;
+    }
+
+    main {
+        flex-direction: column-reverse;
+    }
+
+    /* serviços um embaixo do outro */
+    .servicos {
+        padding: 20px;
+    }
+
+    .lista-servicos {
+        flex-direction: column;
+    }
+
+    .chamada h2 {
+        font-size: 24px;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    
+    .info1,
+    .info2 {
+        display: none;
+    }
+
+    
+    .logo {
+        font-size: 18px;
+        padding: 6px 12px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 10px 20px;
+    }
+
+    .servicos {
+        padding: 15px;
+    }
+
+    .servico {
+        padding: 15px;
+    }
+
+    .chamada {
+        padding: 25px 15px;
+    }
+
+    .chamada h2 {
+        font-size: 22px;
+    }
+
+    .botao-chamada {
+        display: block;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
