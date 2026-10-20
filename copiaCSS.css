@@ -1,12 +1,12 @@
-/* ---------- Geral ---------- */
 * {
     box-sizing: border-box;
 }
 
 body {
+    color: #e5eeee;
     font-family: Arial, sans-serif;
     font-size: 18px;
-    background-color: #fafafa;
+    background-color: #262626;
     margin: 0;
     padding: 20px;
 }
@@ -15,8 +15,8 @@ body {
     max-width: 1100px;
     margin: 0 auto;
     padding: 20px;
-    background-color: rgb(255, 255, 255);
-    border: 2px solid #14282b;
+    background-color: rgb(17, 13, 13);
+    border: 2px solid #666767;
 }
 
 header {
@@ -52,7 +52,7 @@ main {
     align-items: center;
     gap: 40px;
     padding: 30px;
-    border: 2px solid #14282b;
+    border: 2px solid #636565;
 }
 img{
     width: 300px;
@@ -76,13 +76,13 @@ img{
     font-weight: bold;
     text-decoration: none;
     background-color: #f47d0d;
-    border: 2px solid #14282b;
+    border: 2px solid #f47d0d;
 }
 
 .servicos {
     margin-top: 20px;
     padding: 30px;
-    border: 2px solid #14282b;
+    border: 2px solid #666767;
 }
 
 .servicos h2 {
@@ -101,7 +101,7 @@ img{
     padding: 20px;
     text-align: center;
     background-color: #e5eeee;
-    border: 2px solid #14282b;
+    border: 2px solid #666767;
 }
 
 .icone-servico {
