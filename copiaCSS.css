@@ -83,6 +83,7 @@ img{
     margin-top: 20px;
     padding: 30px;
     border: 2px solid #666767;
+
 }
 
 .servicos h2 {
@@ -97,6 +98,7 @@ img{
 }
 
 .servico {
+    color: #14282b;
     flex: 1;
     padding: 20px;
     text-align: center;
@@ -116,6 +118,48 @@ img{
     margin: 0;
 }
 
+.secao-localizacao {
+    margin-top: 20px;
+    padding: 30px;
+    background-color: #262626;
+    border: 2px solid #666767;
+    color: white;
+}
+
+.secao-localizacao h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+.grid-localizacao {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Cria 2 colunas de largura igual */
+    gap: 30px; /* Espaçamento entre o mapa e as informações */
+    align-items: center; /* Alinha verticalmente os itens ao centro */
+}
+
+.mapa-container img {
+    width: 100%; /* Faz a imagem ocupar a largura total da coluna */
+    max-width: 400px;
+    height: auto; /* Mantém a proporção da imagem */
+    border: 2px solid white;
+    display: block;
+    margin: 0 auto;
+}
+
+.info-endereco {
+    background-color: #14282b;
+    padding: 20px;
+    border: 2px solid #666767;
+    border-radius: 8px;
+}
+
+.info-endereco p {
+    font-size: 18px;
+    margin: 12px 0;
+    line-height: 1.5;
+}
 
 .chamada {
     margin-top: 20px;
@@ -185,7 +229,6 @@ footer p {
         flex-direction: column-reverse;
     }
 
-    /* serviços um embaixo do outro */
     .servicos {
         padding: 20px;
     }
