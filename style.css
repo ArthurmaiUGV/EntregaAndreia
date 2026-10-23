@@ -118,6 +118,74 @@ img{
     margin: 0;
 }
 
+.faq {
+    margin-top: 20px;
+    padding: 30px;
+    border: 2px solid #666767;
+}
+
+.faq h2 {
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+.lista-faq {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    text-align: left;
+    background-color: #262626;
+    border: 2px solid #666767;
+}
+
+.faq-item summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #411f5e;
+    cursor: pointer;
+    list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: "+";
+    font-size: 24px;
+    color: #f47d0d;
+}
+
+.faq-item[open] summary::after {
+    content: "−";
+}
+
+.faq-item summary:hover {
+    background-color: #5a2d82;
+}
+
+.faq-item summary:focus-visible {
+    outline: 3px solid #f47d0d;
+    outline-offset: 2px;
+}
+
+/* a resposta */
+.faq-item p {
+    margin: 0;
+    padding: 16px 20px;
+    line-height: 1.6;
+}
+
 .secao-localizacao {
     margin-top: 20px;
     padding: 30px;
@@ -134,15 +202,15 @@ img{
 
 .grid-localizacao {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Cria 2 colunas de largura igual */
-    gap: 30px; /* Espaçamento entre o mapa e as informações */
-    align-items: center; /* Alinha verticalmente os itens ao centro */
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
 }
 
 .mapa-container img {
-    width: 100%; /* Faz a imagem ocupar a largura total da coluna */
+    width: 100%;
     max-width: 400px;
-    height: auto; /* Mantém a proporção da imagem */
+    height: auto;
     border: 2px solid white;
     display: block;
     margin: 0 auto;
@@ -233,6 +301,10 @@ footer p {
         padding: 20px;
     }
 
+    .faq {
+        padding: 20px;
+    }
+
     .lista-servicos {
         flex-direction: column;
     }
@@ -273,6 +345,18 @@ footer p {
 
     .servico {
         padding: 15px;
+    }
+
+    .faq {
+        padding: 15px;
+    }
+
+    .faq-item summary {
+        padding: 14px 16px;
+    }
+
+    .faq-item p {
+        padding: 14px 16px;
     }
 
     .chamada {
